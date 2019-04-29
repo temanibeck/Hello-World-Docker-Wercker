@@ -13,7 +13,7 @@ namespace HelloWorld
 
         }
 
-        public void Configure (IApplicationBuilder app,
+        public void Configure(IApplicationBuilder app,
             IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.Run(async (context) =>
