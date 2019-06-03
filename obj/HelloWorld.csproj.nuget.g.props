@@ -7,7 +7,7 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/temani/.nuget/packages/</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/temani/.nuget/packages/;/usr/local/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.9.4</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.8.2</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -17,7 +17,4 @@
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.razor.design/2.2.0/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.razor.design/2.2.0/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.extensions/2.2.0/build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.extensions/2.2.0/build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props')" />
   </ImportGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_AspNetCore_Razor_Design Condition=" '$(PkgMicrosoft_AspNetCore_Razor_Design)' == '' ">/Users/temani/.nuget/packages/microsoft.aspnetcore.razor.design/2.2.0</PkgMicrosoft_AspNetCore_Razor_Design>
-  </PropertyGroup>
 </Project>
