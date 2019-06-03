@@ -21,6 +21,8 @@ build:
           cd $WERCKER_OUTPUT_DIR/app
 deploy:
   steps:
+    - install-packages:
+        packages: git ssh-client
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
